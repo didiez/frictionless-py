@@ -75,7 +75,7 @@ class CellError(RowError):
                 field_position = row.field_positions[field_number - 1]
                 return cls(
                     note=note,
-                    cells=list(map(str, row.values())),
+                    cells=list(map(str, row.cells)),
                     row_number=row.row_number,
                     row_position=row.row_position,
                     cell=str(cell),
